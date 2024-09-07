@@ -1,6 +1,6 @@
 import time
 import tkinter as tk
-from PIL import ImageTk, Image, ImageOps
+from PIL import ImageTk, Image
 import random
 root = tk.Tk()
 root.geometry("750x650")
@@ -168,9 +168,9 @@ for line in lines:
         key, value = line.split(":")
         result[int(key)] = eval(value)
 
-button1 = tk.Button(root, text='←', command=on_button1_click, bg=color, fg='black', font=('Arial', 40, 'bold'), bd=0)
+button1 = tk.Button(root, text='←', command=on_button2_click, bg=color, fg='black', font=('Arial', 40, 'bold'), bd=0)
 button1.place(x=180, y=420)
-button2 = tk.Button(root, text='→', command=on_button2_click, bg=color, fg='black', font=('Arial', 40, 'bold'), bd=0)
+button2 = tk.Button(root, text='→', command=on_button1_click, bg=color, fg='black', font=('Arial', 40, 'bold'), bd=0)
 button2.place(x=450, y=420)
 button3 = tk.Button(root, text='⟲', command=on_button4_click, bg=color, fg='black', font=('Arial', 40, 'bold'), bd=0)
 button3.place(x=180, y=20)
